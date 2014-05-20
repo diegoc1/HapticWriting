@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9221DCF3-5E7E-4D9C-B8A1-3EFB7E92354C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>application</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A84CE340-C475-45B3-98AE-B9EF3F6B4117</key>
+		<string>ssh://github.com/diegoc1/HapticWriting.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>application.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A84CE340-C475-45B3-98AE-B9EF3F6B4117</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/diegoc1/HapticWriting.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A84CE340-C475-45B3-98AE-B9EF3F6B4117</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A84CE340-C475-45B3-98AE-B9EF3F6B4117</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HapticWriting</string>
+		</dict>
+	</array>
+</dict>
+</plist>
