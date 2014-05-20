@@ -15,7 +15,7 @@
 using namespace chai3d;
 using namespace std;
 
-enum Utensil {pencil, marker, painbrush};
+enum Utensil {pencil, marker, paintbrush};
 
 class WritingGraphics
 {
@@ -33,6 +33,7 @@ public:
     
     //Erases previous drawing and sets the new utensil
     virtual void setUtensil(Utensil utensilType);
+    virtual Utensil getUtsenil();
 };
 
 #endif /* defined(__application__WritingGraphics__) */
