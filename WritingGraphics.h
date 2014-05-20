@@ -13,16 +13,26 @@
 #include "chai3d.h"
 
 using namespace chai3d;
+using namespace std;
+
+enum Utensil {pencil, marker, painbrush};
 
 class WritingGraphics
 {
-    cWorld* world;
+    cMesh* canvas;
     cVector3d lastDrawPoint;
     bool needToSetLastDrawPoint;
+    Utensil utensil;
+    cColorb paintColor;
+    
+    vector<cShapeLine *> drawnPencilLines;
     
 public:
-    WritingGraphics(cWorld *world);
-    virtual void drawAtPoint(const cVector3d position);
+    WritingGraphics(cMesh *canvas);
+    virtual void drawAtPoint(const cVector3d texCoord, double force, double timeInterval);
+    
+    //Erases previous drawing and sets the new utensil
+    virtual void setUtensil(Utensil utensilType);
 };
 
 #endif /* defined(__application__WritingGraphics__) */
