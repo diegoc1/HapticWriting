@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/diegocanales/Documents/testcs277/chai3d-3.0.0/templates/problem\ 1/application.cpp \
+  /Users/diegocanales/Documents/testcs277/chai3d-3.0.0/templates/HapticWriting/application.cpp \
   ../../src/chai3d.h ../../src/devices/CGenericDevice.h \
   ../../src/math/CConstants.h ../../src/system/CGlobals.h \
   ../../external/Eigen/Eigen ../../external/Eigen/Dense \

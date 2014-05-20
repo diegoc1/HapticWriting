@@ -42,8 +42,6 @@ bool mirroredDisplay = false;
 //------------------------------------------------------------------------------
 
 cMesh* box;
-cMesh* sphere;
-cVector3d sphereCenter;
 
 // a world that contains all objects of the virtual environment
 cWorld* world;
@@ -228,21 +226,16 @@ int main(int argc, char* argv[])
     world->addChild(cursor);
     
     box = new cMesh();
-    box_radius = .03;
+    box_radius = .06;
     /*cCreateBox(box, box_radius,box_radius, box_radius, cVector3d(0.0, 0.0, 0.0),
                cMatrix3d(cDegToRad(0), cDegToRad(15), cDegToRad(45), C_EULER_ORDER_XYZ)
                );*/
     cCreateBox(box, box_radius,box_radius, box_radius, cVector3d(0.0, 0.0, 0.0),
                cMatrix3d(cDegToRad(0), cDegToRad(0), cDegToRad(0), C_EULER_ORDER_XYZ)
                );
+    box->m_material->setRed();
     world->addChild(box);
-    
-    sphere = new cMesh();
-    //cCreateSphere(sphere, .015, 32, 32, cVector3d(0, 0, .027));
-    sphereCenter = cVector3d(0, 0, .027);
-    cCreateSphere(sphere, .015, 32, 32, sphereCenter);
 
-    world->addChild(sphere);
     
   
 
@@ -457,8 +450,6 @@ void updateHaptics(void)
 
         cVector3d force(0, 0, 0);
         double d = .015;
-        cVector3d dist = position - sphereCenter;
-        cVector3d normal = cNormalize(dist);
         double k = 10000;
 
         //Box force
@@ -479,11 +470,6 @@ void updateHaptics(void)
                 int sign = position.x() / fabs(position.x());
                 force.set(sign * -k * (fabs(position.x()) - radius), 0, 0);
             }
-        }
-        
-        //Sphere force
-        if (dist.length() < d) {
-            force += -k * (dist.length() - d) * normal;
         }
 
 
