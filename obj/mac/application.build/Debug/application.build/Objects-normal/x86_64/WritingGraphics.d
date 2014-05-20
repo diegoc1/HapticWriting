@@ -1,5 +1,6 @@
 dependencies: \
-  /Users/diegocanales/Documents/testcs277/chai3d-3.0.0/templates/HapticWriting/problem1.cpp \
+  /Users/willharvey/Desktop/Spring\ 2014\ Classes/CS277/chai3d-3.0.0/templates/HapticWriting/WritingGraphics.cpp \
+  /Users/willharvey/Desktop/Spring\ 2014\ Classes/CS277/chai3d-3.0.0/templates/HapticWriting/WritingGraphics.h \
   ../../src/chai3d.h ../../src/devices/CGenericDevice.h \
   ../../src/math/CConstants.h ../../src/system/CGlobals.h \
   ../../external/Eigen/Eigen ../../external/Eigen/Dense \

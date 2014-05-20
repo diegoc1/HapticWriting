@@ -6,6 +6,7 @@
 
 //------------------------------------------------------------------------------
 #include "chai3d.h"
+#include "WritingGraphics.h"
 //------------------------------------------------------------------------------
 using namespace chai3d;
 using namespace std;
@@ -42,6 +43,7 @@ bool mirroredDisplay = false;
 //------------------------------------------------------------------------------
 
 cMesh* box;
+WritingGraphics *writingGraphics;
 
 // a world that contains all objects of the virtual environment
 cWorld* world;
@@ -237,8 +239,7 @@ int main(int argc, char* argv[])
     world->addChild(box);
 
     
-  
-
+    writingGraphics = new WritingGraphics(world);
 
     //--------------------------------------------------------------------------
     // HAPTIC DEVICE
@@ -379,6 +380,12 @@ void graphicsTimer(int data)
 
 //------------------------------------------------------------------------------
 
+void drawWriting() {
+    
+    
+    
+}
+
 void updateGraphics(void)
 {
     /////////////////////////////////////////////////////////////////////
@@ -395,6 +402,12 @@ void updateGraphics(void)
     /////////////////////////////////////////////////////////////////////
     // RENDER SCENE
     /////////////////////////////////////////////////////////////////////
+    
+    //Check for drawing
+    cVector3d position;
+    hapticDevice->getPosition(position);
+    writingGraphics->drawAtPoint(position);
+    
 
     // render world
     camera->renderView(windowW, windowH);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259B55E1192AEEF6009775C8 /* WritingGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 259B55DF192AEEF6009775C8 /* WritingGraphics.cpp */; };
 		9689850818ECB7B70029A981 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9689850718ECB7B70029A981 /* application.cpp */; };
 		9689851918ECB8330029A981 /* libchai3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689851618ECB7F90029A981 /* libchai3d.a */; };
 		9689851D18ECB9350029A981 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689851A18ECB8710029A981 /* GLUT.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259B55DF192AEEF6009775C8 /* WritingGraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WritingGraphics.cpp; sourceTree = SOURCE_ROOT; };
+		259B55E0192AEEF6009775C8 /* WritingGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WritingGraphics.h; sourceTree = SOURCE_ROOT; };
 		9665644A18ECB76A0032011B /* application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = application; sourceTree = BUILT_PRODUCTS_DIR; };
 		9689850718ECB7B70029A981 /* application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = application.cpp; sourceTree = SOURCE_ROOT; };
 		9689850A18ECB7F90029A981 /* libchai3d.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libchai3d.xcodeproj; path = ../../libchai3d.xcodeproj; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				9689850718ECB7B70029A981 /* application.cpp */,
+				259B55DF192AEEF6009775C8 /* WritingGraphics.cpp */,
+				259B55E0192AEEF6009775C8 /* WritingGraphics.h */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9689850818ECB7B70029A981 /* application.cpp in Sources */,
+				259B55E1192AEEF6009775C8 /* WritingGraphics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

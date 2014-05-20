@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/diegocanales/Documents/testcs277/chai3d-3.0.0/templates/HapticWriting/application.cpp \
+  /Users/willharvey/Desktop/Spring\ 2014\ Classes/CS277/chai3d-3.0.0/templates/HapticWriting/application.cpp \
   ../../src/chai3d.h ../../src/devices/CGenericDevice.h \
   ../../src/math/CConstants.h ../../src/system/CGlobals.h \
   ../../external/Eigen/Eigen ../../external/Eigen/Dense \
@@ -213,4 +213,5 @@ dependencies: \
   ../../src/resources/CFontCalibri36.h \
   ../../src/resources/CFontCalibri40.h \
   ../../src/resources/CFontCalibri72.h \
-  ../../src/resources/CFontCalibri144.h
+  ../../src/resources/CFontCalibri144.h \
+  /Users/willharvey/Desktop/Spring\ 2014\ Classes/CS277/chai3d-3.0.0/templates/HapticWriting/WritingGraphics.h
