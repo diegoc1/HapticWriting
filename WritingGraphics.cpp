@@ -45,10 +45,6 @@ void WritingGraphics::drawAtPoint(const cVector3d texCoord, double force, double
         const int BRUSH_SIZE = 4;
         double size = cClamp((K_SIZE * force), 0.0, (double)(BRUSH_SIZE));
 
-        
-        
-        
-        
         for (int x=-BRUSH_SIZE; x<BRUSH_SIZE; x++)
         {
             for (int y=-BRUSH_SIZE; y<BRUSH_SIZE; y++)

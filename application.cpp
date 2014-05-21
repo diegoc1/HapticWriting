@@ -102,8 +102,6 @@ cToolCursor* tool;
 
 // a mesh object to model a piece of canvas
 cMesh* canvas;
-cMesh *table;
-
 
 // copy of blank canvas texture
 cImagePtr canvasOriginal;
@@ -412,7 +410,12 @@ int main(int argc, char* argv[])
     
     // create a background
     cBackground* background = new cBackground();
-    camera->m_backLayer->addChild(background);
+    //camera->m_backLayer->addChild(background);
+
+    cColorf bgColor;
+    bgColor.setGrayLightSlate();
+    //world->setBackgroundColor(&bgColor);
+    world->setBackgroundColor(bgColor);
     
     // set background properties
     background->setCornerColors(cColorf(1.00, 1.00, 1.00),
@@ -422,51 +425,6 @@ int main(int argc, char* argv[])
     
     
     
-    
-    // create a mesh
-    table = new cMesh();
-    
-    // create a plane
-    cCreatePlane(table, 1.5, 1);
-    
-    // create collision detector
-    table->createBruteForceCollisionDetector();
-    
-    // add object to world
-    world->addChild(table);
-    
-    // set the position of the object
-    table->setLocalPos(-0.36, 0, 0.0);
-    table->rotateAboutGlobalAxisRad(cVector3d(0,1,0), cDegToRad(90));
-    table->rotateAboutGlobalAxisRad(cVector3d(1,0,0), cDegToRad(90));
-    
-    // set graphic properties
-    table->m_texture = cTexture2d::create();
-    fileload = table->m_texture->loadFromFile(RESOURCE_PATH("resources/images/wood.jpg"));
-    if (!fileload)
-    {
-#if defined(_MSVC)
-        fileload = table->m_texture->loadFromFile("../../../bin/resources/images/wood.jpg");
-#endif
-    }
-    if (!fileload)
-    {
-        cout << "Error - Texture image failed to load correctly." << endl;
-        close();
-        return (-1);
-    }
-    
-    // we disable lighting properties for canvas
-    table->setUseMaterial(false);
-    
-    // enable texture mapping
-    table->setUseTexture(true);
-    
-    // set haptic properties
-    table->m_material->setStiffness(0.5 * maxStiffness);
-    table->m_material->setStaticFriction(0.20);
-    table->m_material->setDynamicFriction(0.15);
-    table->m_material->setHapticTriangleSides(true, false);
     
     //--------------------------------------------------------------------------
     // START SIMULATION
